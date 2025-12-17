@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #289968;
+}
+
+.container {
+    text-align: center;
+    background-color: #f7f6ef;
+    max-width: 900px;
+    width: calc(100% - 40px);
+    min-height: 480px;
+    margin: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(20,20,20,0.12);
+    padding: 28px;
+}
+
+input {
+    padding: 10px 14px;
+    font-size: 18px;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 6px;
+    width: 420px;
+    max-width: 60%;
+}
+
+button {
+    padding: 10px 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    background: #287b4f;
+    color: #fff;
+    transition: transform .08s ease, opacity .12s ease;
+}
+
+.secondary {
+    background: #6c757d;
+}
+
+.input-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff, #fbfbfb);
+    box-shadow: 0 2px 6px rgba(12,12,12,0.04);
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.task-text {
+    font-size: 16px;
+}
+
+.task-actions button {
+    margin-left: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+.task-actions .delete {
+    background: #c33;
+}
+
+.task-actions .complete {
+    background: #2a9d63;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.9;
+}
+
+.empty {
+    color: #666;
+    margin: 8px 0 16px 0;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+} */
